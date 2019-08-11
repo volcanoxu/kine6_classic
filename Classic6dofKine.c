@@ -22,12 +22,12 @@
 #define CLASSIC6DOF_L_WT 0.100f
 
 static float classic6dof_DH[6][4] = {
-	{	0.0f,			CLASSIC6DOF_L_BS,	CLASSIC6DOF_D_BS,	-(float)M_PI_2	},
-	{	-(float)M_PI_2,	0.0f,				CLASSIC6DOF_L_SE,	0.0f			},
-	{	 (float)M_PI_2,	CLASSIC6DOF_D_EW,	0.0f,				 (float)M_PI_2	},
-	{	0.0f,			CLASSIC6DOF_L_EW,	0.0f,				-(float)M_PI_2	},
-	{	0.0f,			0.0f,				0.0f,				 (float)M_PI_2	},
-	{	0.0f,			CLASSIC6DOF_L_WT,	0.0f,				0.0f			}
+	{0.0f,			CLASSIC6DOF_L_BS,	CLASSIC6DOF_D_BS,	-(float)M_PI_2	},
+	{-(float)M_PI_2,	0.0f,			CLASSIC6DOF_L_SE,	0.0f		},
+	{(float)M_PI_2,		CLASSIC6DOF_D_EW,	0.0f,			(float)M_PI_2	},
+	{0.0f,			CLASSIC6DOF_L_EW,	0.0f,			-(float)M_PI_2	},
+	{0.0f,			0.0f,			0.0f,			(float)M_PI_2	},
+	{0.0f,			CLASSIC6DOF_L_WT,	0.0f,			0.0f		}
 }; // home, d, a, alpha
 
 static float L1_bs[3] =	{	 CLASSIC6DOF_D_BS,	-CLASSIC6DOF_L_BS,	0.0f				};
